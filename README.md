@@ -68,38 +68,6 @@ code --install-extension ritwickdey.LiveServer
 - Select **"Open with Live Server"**.
 - **View in Browser**: A new browser tab will open, displaying your CV website. Any edits saved in VSCode will automatically refresh in the browser.
 
-### 4. Setting Up Docker Compose 🐳
-
-To streamline your development environment, use Docker Compose.
-
-#### Adding `docker-compose.yml`
-
-Create a `docker-compose.yml` file in the root of your project:
-
-````yaml:docker-compose.yml
-version: '3'
-services:
-  my-great-nginx-web-server:
-    image: nginx:latest
-    ports:
-      - '80:80'
-    volumes:
-      - type: bind
-        source: ./
-        target: /usr/share/nginx/html/
-    restart: always
-````
-
-#### Running Docker Compose
-
-Start your Docker container with:
-
-```bash
-docker-compose up -d
-```
-
-Your CV website is now accessible at `http://localhost`.
-
 ---
 
 ## Version Control with Git 🐱‍💻
@@ -192,55 +160,77 @@ https://yourusername.github.io/
 *Replace `yourusername` with your GitHub username.*
 
 ---
+## Advanced Deployment with Docker 🐳
 
-## Advanced Deployment with Docker Compose 🐳
-
-For those interested in deploying their CV website on a cloud VM using Docker Compose, follow these advanced steps.
+For those interested in deploying their CV website using Docker, you have the flexibility to choose between a **Dockerfile** or **Docker Compose**. This section provides guidance on both methods to enhance your learning experience.
 
 ### 1. Dockerizing Your Application
 
 Docker allows you to containerize your application, ensuring consistency across environments.
 
-#### Using `docker-compose.yml`
+#### Option 1: Using a Dockerfile
 
-Ensure your `docker-compose.yml` is set up as shown:
+1. **Ensure your `Dockerfile` is set up as shown:**
 
-````yaml:docker-compose.yml
-version: '3'
-services:
-  my-great-nginx-web-server:
-    image: nginx:latest
-    ports:
-      - '80:80'
-    volumes:
-      - type: bind
-        source: ./
-        target: /usr/share/nginx/html/
-    restart: always
-````
+    `````Dockerfile:Dockerfile
+    FROM nginx:latest
+    COPY . /usr/share/nginx/html/
+    `````
 
-#### Building and Running with Docker Compose
+2. **Build and Run the Docker Image**
 
-```bash
-docker-compose up -d
-```
+    ```bash
+    docker build -t revealjs_cv .
+    docker run -d -p 80:80 revealjs_cv
+    ```
 
-- **`-d`**: Runs the containers in detached mode.
+    - **`-t revealjs_cv`**: Tags the image with the name `revealjs_cv`.
+    - **`-d`**: Runs the container in detached mode.
+    - **`-p 80:80`**: Maps port 80 of the host to port 80 of the container.
 
-*Your CV website is now accessible at `http://localhost`.*
+3. **Access Your CV Website**: Navigate to `http://localhost` in your browser.
+
+#### Option 2: Using Docker Compose
+
+1. **Ensure your `docker-compose.yml` is set up as shown:**
+
+    `````yaml:docker-compose.yml
+    version: '3'
+    services:
+      my-great-nginx-web-server:
+        image: nginx:latest
+        ports:
+          - '80:80'
+        volumes:
+          - type: bind
+            source: ./
+            target: /usr/share/nginx/html/
+        restart: always
+    `````
+
+2. **Build and Run with Docker Compose**
+
+    ```bash
+    docker-compose up -d
+    ```
+
+    - **`-d`**: Runs the containers in detached mode.
+
+3. **Access Your CV Website**: Navigate to `http://localhost` in your browser.
 
 ### 2. Deploying to a Cloud VM ☁️
 
-Deploy your Dockerized application to a cloud service provider like [AWS](https://aws.amazon.com/), [Google Cloud](https://cloud.google.com/), or Tencent Cloud, Huawei Cloud, Alibaba Cloud, etc.
+Deploy your Dockerized application to a cloud service provider like [AWS](https://aws.amazon.com/), [Google Cloud](https://cloud.google.com/), [DigitalOcean](https://www.digitalocean.com/), or others.
 
 #### Steps Overview
 
 1. **Provision a VM Instance**: Choose your preferred cloud provider and create a new virtual machine.
 2. **Install Docker and Docker Compose**: Ensure both are installed on your VM.
 3. **Transfer Your Project Files**: Use `scp` or Git to transfer your project to the VM.
-4. **Build and Run Docker Containers**: Execute the same Docker Compose commands on the VM.
+4. **Build and Run Docker Containers**: Execute the same Docker commands on the VM.
 5. **Configure Firewall and DNS**: Open necessary ports and (optionally) configure a custom domain.
 
+*Refer to your cloud provider's documentation for detailed instructions.*
 
 ---
 
@@ -261,4 +251,3 @@ Deploy your Dockerized application to a cloud service provider like [AWS](https:
 Congratulations! You've successfully built and deployed your personal CV website using Reveal.js and GitHub Pages. This platform not only showcases your professional profile but also demonstrates your web development skills. By following this tutorial, you've gained valuable experience in version control, web design, and deployment strategies.
 
 Happy coding! 👨‍💻👩‍💻
-
