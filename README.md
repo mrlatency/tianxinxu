@@ -571,7 +571,6 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... your_email@example.com
 - **Optimize Images**: Compress images to reduce load times without compromising quality.
 - **Responsive Design**: Ensure your CV website is mobile-friendly for accessibility across devices.
 - **Accessibility Compliance**: Adhere to web accessibility standards to make your website usable for all visitors.
-- **SEO Optimization**: Implement SEO best practices to improve visibility on search engines.
   
   ```html:index.html
   <head>
@@ -584,65 +583,7 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... your_email@example.com
 
 ---
 
-## Troubleshooting
-
-Encounter common issues and learn how to resolve them effectively.
-
-### Issue 1: Live Server Not Reflecting Changes
-
-- **Solution**: Ensure you've saved your files after making changes. Restart the Live Server extension if necessary.
-
-### Issue 2: Git Push Failing Due to Authentication
-
-- **Solution**: Verify that your SSH keys are correctly set up and added to your GitHub account. Test your SSH connection:
-
-  ```bash
-  ssh -T git@github.com
-  ```
-
-  *You should receive a success message.*
-
-### Issue 3: GitHub Pages Not Updating
-
-- **Solution**: Confirm that you've pushed your latest commits to the correct branch. Check the GitHub Pages settings to ensure the source branch is correctly configured.
-
-### Issue 4: Docker Container Fails to Start
-
-- **Solution**:
-  - Check Docker logs for error messages:
-
-    ```bash
-    docker logs <container_id>
-    ```
-
-  - Ensure port `80` is not in use.
-  - Verify that all necessary files are copied into the Docker image.
-
----
 
 ## Conclusion
 
 Congratulations! You've successfully built and deployed your personal CV website using Reveal.js and GitHub Pages. This platform not only showcases your professional profile but also demonstrates your web development skills. By following this tutorial, you've gained valuable experience in version control, web design, and deployment strategies.
-
----
-
-## Additional Resources
-
-- **Reveal.js Documentation**: [https://revealjs.com/](https://revealjs.com/)
-- **GitHub Pages Guide**: [https://docs.github.com/en/pages](https://docs.github.com/en/pages)
-- **Git Documentation**: [https://git-scm.com/doc](https://git-scm.com/doc)
-- **VSCode Documentation**: [https://code.visualstudio.com/docs](https://code.visualstudio.com/docs)
-- **Docker Documentation**: [https://docs.docker.com/](https://docs.docker.com/)
-- **SSH Key Generation Guide**: [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
-- 
-Feel free to explore these resources to deepen your understanding and enhance your CV website further. Happy coding!
-
----
-
-# Conclusion
-
-This tutorial has equipped you with the knowledge and tools to build a dynamic and professional CV website using Reveal.js and GitHub Pages. By following these steps, you've not only created an impressive online portfolio but also honed your skills in web development, version control, and deployment.
-
-Remember, the web is ever-evolving, and there's always room to enhance and expand your website. Stay curious, keep learning, and continue to showcase your achievements with pride!
-
-Happy coding!
