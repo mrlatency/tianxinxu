@@ -5,7 +5,7 @@
 
 Welcome to the **revealjs_cv** tutorial! This comprehensive guide will walk you through creating a stunning, interactive CV website using [Reveal.js](https://revealjs.com/) and [GitHub Pages](https://pages.github.com/). Whether you're a beginner or looking to enhance your web development skills, this tutorial covers everything you need to know—from setting up your development environment to deploying your site on the cloud.
 
----
+
 
 ## Introduction
 
@@ -13,7 +13,7 @@ Creating a personal CV website is an excellent way to showcase your skills, proj
 
 This tutorial is designed to guide you through each step of the process, providing detailed instructions and insights to help you build a professional CV website.
 
----
+
 
 ## Getting Started
 
@@ -68,7 +68,7 @@ code --install-extension ritwickdey.LiveServer
 - Select **"Open with Live Server"**.
 - **View in Browser**: A new browser tab will open, displaying your CV website. Any edits saved in VSCode will automatically refresh in the browser.
 
----
+
 
 ## Version Control with Git 🐱‍💻
 
@@ -130,7 +130,7 @@ git push -u origin main
 
 *If `main` branch doesn't exist yet, you might need to push to `master` or your default branch.*
 
----
+
 
 ## Setting Up GitHub Pages 🌐
 
@@ -159,7 +159,7 @@ https://yourusername.github.io/
 
 *Replace `yourusername` with your GitHub username.*
 
----
+
 ## Advanced Deployment with Docker 🐳
 
 For those interested in deploying their CV website using Docker, you have the flexibility to choose between a **Dockerfile** or **Docker Compose**. This section provides guidance on both methods to enhance your learning experience.
@@ -230,20 +230,6 @@ Deploy your Dockerized application to a cloud service provider like [AWS](https:
 4. **Build and Run Docker Containers**: Execute the same Docker commands on the VM.
 5. **Configure Firewall and DNS**: Open necessary ports and (optionally) configure a custom domain.
 
-
----
-
-## Best Practices and Tips 💡
-
-- **Commit Often**: Regular commits help track progress and make it easier to revert changes if needed.
-- **Write Descriptive Commit Messages**: Clear messages improve project documentation and collaboration.
-- **Use Branches**: For significant changes or new features, create separate branches to maintain the stability of the main branch.
-
-  ```bash
-  git checkout -b feature/custom-theme
-  ```
-
----
 
 ## Conclusion 🎉
 
