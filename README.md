@@ -220,7 +220,7 @@ Docker allows you to containerize your application, ensuring consistency across 
 
 ### 2. Deploying to a Cloud VM ☁️
 
-Deploy your Dockerized application to a cloud service provider like [AWS](https://aws.amazon.com/), [Google Cloud](https://cloud.google.com/), [DigitalOcean](https://www.digitalocean.com/), or others.
+Deploy your Dockerized application to a cloud service provider like [AWS](https://aws.amazon.com/), [Google Cloud](https://cloud.google.com/), [DigitalOcean](https://www.digitalocean.com/), or Tencent Cloud, Huawei Cloud, Alibaba Cloud, etc.
 
 #### Steps Overview
 
