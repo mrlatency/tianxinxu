@@ -231,7 +231,7 @@ docker-compose up -d
 
 ### 2. Deploying to a Cloud VM ☁️
 
-Deploy your Dockerized application to a cloud service provider like [AWS](https://aws.amazon.com/), [Google Cloud](https://cloud.google.com/), or [DigitalOcean](https://www.digitalocean.com/).
+Deploy your Dockerized application to a cloud service provider like [AWS](https://aws.amazon.com/), [Google Cloud](https://cloud.google.com/), or Tencent Cloud, Huawei Cloud, Alibaba Cloud, etc.
 
 #### Steps Overview
 
@@ -241,7 +241,6 @@ Deploy your Dockerized application to a cloud service provider like [AWS](https:
 4. **Build and Run Docker Containers**: Execute the same Docker Compose commands on the VM.
 5. **Configure Firewall and DNS**: Open necessary ports and (optionally) configure a custom domain.
 
-*Refer to your cloud provider's documentation for detailed instructions.*
 
 ---
 
