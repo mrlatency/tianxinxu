@@ -121,15 +121,12 @@ git remote add origin git@github.com:yourusername/yourusername.github.io.git
 #### Pushing Your Code
 
 ```bash
-git push -u origin main
+git push -u origin master
 ```
 
 - **`-u`**: Sets the upstream branch.
 - **`origin`**: The remote repository.
-- **`main`**: The branch name.
-
-*If `main` branch doesn't exist yet, you might need to push to `master` or your default branch.*
-
+- **`master`**: The branch name.
 
 
 ## Setting Up GitHub Pages 🌐
@@ -144,7 +141,7 @@ GitHub Pages allows you to host your website directly from your GitHub repositor
 3. **Select GitHub Pages**:
    - In the left sidebar, click **"Pages"**.
 4. **Configure Source**:
-   - Under **"Source"**, select the branch you want to deploy (e.g., `main`).
+   - Under **"Source"**, select the branch you want to deploy (e.g., `master`).
    - Choose the root folder (`/`) if your `index.html` is in the root directory.
 5. **Save**:
    - Click **"Save"** to apply the settings.
@@ -180,8 +177,8 @@ Docker allows you to containerize your application, ensuring consistency across 
 2. **Build and Run the Docker Image**
 
     ```bash
-    docker build -t revealjs_cv .
-    docker run -d -p 80:80 revealjs_cv
+    sudo docker build -t revealjs_cv .
+    sudo docker run -d -p 80:80 revealjs_cv
     ```
 
     - **`-t revealjs_cv`**: Tags the image with the name `revealjs_cv`.
@@ -211,7 +208,7 @@ Docker allows you to containerize your application, ensuring consistency across 
 2. **Build and Run with Docker Compose**
 
     ```bash
-    docker-compose up -d
+    sudo docker-compose up -d
     ```
 
     - **`-d`**: Runs the containers in detached mode.
