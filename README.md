@@ -230,7 +230,6 @@ Deploy your Dockerized application to a cloud service provider like [AWS](https:
 4. **Build and Run Docker Containers**: Execute the same Docker commands on the VM.
 5. **Configure Firewall and DNS**: Open necessary ports and (optionally) configure a custom domain.
 
-*Refer to your cloud provider's documentation for detailed instructions.*
 
 ---
 
