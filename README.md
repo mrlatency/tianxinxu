@@ -71,17 +71,10 @@ code --install-extension ritwickdey.LiveServer
 
 ## Version Control with Git 🐱‍💻
 
-Version control is crucial for tracking changes and collaborating efficiently. Git, combined with GitHub, offers a robust solution for managing your project.
+Version control is crucial for tracking changes and collaborating efficiently. Git, combined with Gitee/GitHub, offers a robust solution for managing your project.
 
-### 1. Initializing Git
 
-If you haven't already initialized Git in your project, follow these steps.
-
-```bash
-git init
-```
-
-This command initializes an empty Git repository in your project directory.
+### 1. Committing Changes 📝
 
 *Verify the initialization:*
 
@@ -91,7 +84,6 @@ git status
 
 You should see the untracked files listed.
 
-### 2. Committing Changes 📝
 
 Start tracking your project files and commit your initial setup.
 
@@ -103,7 +95,7 @@ git commit -m "Initial commit: Setup revealjs_cv template"
 - **`git add .`**: Stages all files in the current directory.
 - **`git commit -m "..."`**: Commits the staged files with a descriptive message.
 
-### 3. Pushing to GitHub 🚀
+### 2. Pushing to GitHub 🚀
 
 To host your repository on GitHub and enable GitHub Pages, follow these steps.
 
