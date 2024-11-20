@@ -1,4 +1,4 @@
-# 🚀 revealjs_cv Tutorial: Building Your CV Website with Reveal.js and GitHub Pages
+# Building Your CV Website with Reveal.js and GitHub Pages
 
 🎥 **Video on Bilibili:**  
 - [https://www.bilibili.com/video/BV1os421M7WN/](https://www.bilibili.com/video/BV1os421M7WN/)
@@ -12,7 +12,6 @@ Welcome to the **revealjs_cv** tutorial! This comprehensive guide will walk you 
 Creating a personal CV website is an excellent way to showcase your skills, projects, and accomplishments. By leveraging **Reveal.js**, a powerful framework for creating presentations, you can craft an interactive and visually appealing online CV. Hosting your site with **GitHub Pages** ensures it's easily accessible and version-controlled.
 
 This tutorial is designed to guide you through each step of the process, providing detailed instructions and insights to help you build a professional CV website.
-
 
 
 ## Getting Started
@@ -47,12 +46,12 @@ git remote add origin git@github.com:yourusername/yourusername.github.io.git
 
 *Replace `yourusername` with your GitHub username.*
 
-### 3. Installing Live Server Extension 🔌
+### 3. Installing Live Server or Live Preview Extension 🔌
 
-To preview your website in real-time, install the Live Server extension in VSCode.
+To preview your website in real-time, install the Live Server or Live Preview extension in VSCode.
 
 1. **Open VSCode**.
-2. **Navigate to Extensions**: Click on the Extensions icon in the sidebar or press `Ctrl+Shift+X` (`Cmd+Shift+X` on macOS).
+2. **Navigate to Extensions**: Click on the Extensions icon in the sidebar.
 3. **Search for "Live Server" or "Live Preview"**.
 4. **Install the Extension**.
 
@@ -66,7 +65,7 @@ code --install-extension ritwickdey.LiveServer
 
 - Right-click on `index.html` in the Explorer sidebar.
 - Select **"Open with Live Server"**.
-- **View in Browser**: A new browser tab will open, displaying your CV website. Any edits saved in VSCode will automatically refresh in the browser.
+- **View in Browser**: A new browser tab will open, displaying your CV website. Any edits saved in VSCode (e.g. `index.html`) will automatically refresh in the browser.
 
 
 
@@ -223,13 +222,11 @@ Deploy your Dockerized application to a cloud service provider like [AWS](https:
 
 1. **Provision a VM Instance**: Choose your preferred cloud provider and create a new virtual machine.
 2. **Install Docker and Docker Compose**: Ensure both are installed on your VM.
-3. **Transfer Your Project Files**: Use `scp` or Git to transfer your project to the VM.
+3. **Transfer Your Project Files**: Use `scp` or Git to transfer your project to the VM. Or, alternatively, you can git clone the repository to the VM.
 4. **Build and Run Docker Containers**: Execute the same Docker commands on the VM.
-5. **Configure Firewall and DNS**: Open necessary ports and (optionally) configure a custom domain.
+5. **Configure Firewall and DNS**: Open necessary ports and (optionally) configure a custom domain (e.g. http://lunde.top).
 
 
 ## Conclusion 🎉
 
 Congratulations! You've successfully built and deployed your personal CV website using Reveal.js and GitHub Pages. This platform not only showcases your professional profile but also demonstrates your web development skills. By following this tutorial, you've gained valuable experience in version control, web design, and deployment strategies.
-
-Happy coding! 👨‍💻👩‍💻
